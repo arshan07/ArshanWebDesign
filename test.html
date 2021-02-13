@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script>
+        function createStory() {
+            var name1 = document.getElementById("name1").value;
+            document.getElementById("name1Output").innerHTML = name1;
+            document.getElementById("name1Output2").innerHTML = name1;
+            document.getElementById("name1Output3").innerHTML = name1;
+            document.getElementById("name1Output4").innerHTML = name1;
+            document.getElementById("name1Output5").innerHTML = name1;
+            document.getElementById("name1Output6").innerHTML = name1;
+        }
+    </script>
+
+    <script>
+        function createStoryTwo() {
+            var subject = document.getElementById("subject").value;
+            document.getElementById("subjectOutput").innerHTML = subject;
+            document.getElementById("subjectOutput2").innerHTML = subject;
+        }
+    </script>
+
+    <script>
+        function createStoryThree() {
+            var numberOfStudents = document.getElementById("numberOfStudents").value;
+            document.getElementById("numberOfStudentsOutput").innerHTML = numberOfStudents;
+            document.getElementById("numberOfStudentsOutput2").innerHTML = numberOfStudents;
+        }
+    </script>
+
+
+
+<script>
+    function createStoryFour() {
+        var girlName = document.getElementById("girlName").value;
+        document.getElementById("girlNameOutput").innerHTML = girlName;
+        document.getElementById("girlNameOutput2").innerHTML = girlName;
+        document.getElementById("girlNameOutput3").innerHTML = girlName;
+    }
+</script>
+
+
+
+
+
+<script>
+    function createStoryThirteen() {
+var fameIsChecked = document.getElementById("reason1").checked;
+            var moneyIsChecked = document.getElementById("reason2").checked;
+            var goodIsChecked = document.getElementById("reason3").checked;
+
+            if(fameIsChecked) {
+                document.getElementById("forFame").innerHTML = "exceptional";                
+            }
+
+            if(moneyIsChecked) {
+                document.getElementById("forMoney").innerHTML = "awesome";
+            }
+
+            if(goodIsChecked){
+                document.getElementById("forGoodness").innerHTML = "Great";
+            }
+        }
+</script>
+
+<script>
+    function createStoryFive() {
+        var restaraunt = document.getElementById("restaraunt").value;
+        document.getElementById("restarauntNameOutput").innerHTML = restaraunt;
+        document.getElementById("restarauntNameOutput2").innerHTML = restaraunt;
+    }
+</script>
+
+<script>
+    function createStorySix() {
+        var restarauntFood = document.getElementById("restarauntFood").value;
+        document.getElementById("restarauntFoodNameOutput").innerHTML = restarauntFood;
+        document.getElementById("restarauntFoodNameOutput2").innerHTML = restarauntFood;
+        document.getElementById("restarauntFoodNameOutput3").innerHTML = restarauntFood;
+    }
+</script>
+
+<script>
+    function createStorySeven() {
+        var number = document.getElementById("number").value;
+        document.getElementById("numberOutput").innerHTML = number;
+        document.getElementById("numberOutput2").innerHTML = number;
+    }
+</script>
+
+<script>
+    function createStoryEight() {
+        var numberB = document.getElementById("numberB").value;
+        document.getElementById("numberBOutput").innerHTML = numberB;
+    }
+</script>
+
+<script>
+    function createStoryTen() {
+        var radioRoom = document.querySelector('input[name="radioRoom"]:checked').value;
+        document.getElementById("radioRoom").innerHTML = radioRoom;   
+    }
+
+</script>
+
+<script>
+    function createStoryEleven() {
+        var grade = document.querySelector('input[name="grade"]:checked').value;
+        document.getElementById("grade").innerHTML = grade;   
+    }
+
+</script>
+
+<script>
+
+    function createStoryFourteen() {
+        var selectBox = document.getElementById('activity').value;
+        document.getElementById("activity").innerHTML = selectBox; 
+        document.getElementById("activitySelectBox").innerHTML = selectBox;     
+        
+        
+    }
+</script>
+
+</head>
+<form action="javascript:createStory();">
+    <div class="form-group">
+        <label for="name1">A last Name</label>
+        <input type="text" class="form-control" id="name1" aria-describedby="nameHelp" placeholder="Enter a last name">
+        <small id="nameHelp" class="form-text text-muted">Any last name you want.</small>
+    </div>
+</form>
+<form action="javascript:createStoryTwo();">
+    <div class="form-group">
+        <label for="subject">Boy Name</label>
+        <input type="text" class="form-control" id="subject" placeholder="Enter a boy's name">
+    </div>
+</form>
+<form action="javascript:createStoryThree();">
+    <div class="form-group">
+        <label for="numberOfStudents">A boys name</label>
+        <input type="text" class="form-control" id="numberOfStudents" placeholder="Enter another boys name">
+    </div>
+
+</form>
+
+<form action="javascript:createStoryFour();">
+    <div class="form-group">
+        <label for="subject">a Girl Name</label>
+        <input type="text" class="form-control" id="girlName" placeholder="Enter a girl's name.">
+    </div>
+</form>
+
+<form action="javascript:createStoryFive();">
+    <div class="form-group">
+        <label for="subject">Your favorite restaraunt</label>
+        <input type="text" class="form-control" id="restaraunt" placeholder="Enter the name of your favorite restaraunt.">
+    </div>
+</form>
+
+<form action="javascript:createStorySix();">
+    <div class="form-group">
+        <label for="subject">Your favorite food.</label>
+        <input type="text" class="form-control" id="restarauntFood" placeholder="Enter the name of your favorite food.">
+    </div>
+</form>
+
+<form action="javascript:createStorySeven();">
+    <div class="form-group">
+        <label for="subject">type in a number from 100 - 200.</label>
+        <input type="text" class="form-control" id="number" placeholder="Enter a number from 100 - 200.">
+    </div>
+</form>
+
+<form onClick="javascript:createStoryFourteen();">  
+    <label for="activity">Select an emotion:</label>          
+    <select id="activity" name="activity">
+      <option>Select an emotion!</option>
+      <option>rejoiced</option>
+      <option>exclaimed</option>
+      <option>yelled</option>
+      <option>screamed</option>
+    </select>
+
+</form>
+
+<form onClick="javascript:createStoryTen();">
+    <div class="form-group">
+
+        <input type="radio" id="radioRoomOutput" name="radioRoom" value="closet">
+        <label for="radioRoomOutput">Closet</label><br>
+        <input type="radio" id="radioRoomOutput2" name="radioRoom" value="bathroom">
+        <label for="radioRoomOutput2">Bathroom</label><br>  
+        <input type="radio" id="radioRoomOutput3" name="radioRoom" value="living room">
+        <label for="radioRoomOutput3">Living Room</label><br>
+        <input type="radio" id="radioRoomOutput4" name="radioRoom" value="kitchen">
+        <label for="radioRoomOutput4">Kitchen </label><br>
+
+    </div>
+</form>   
+
+<form onClick="javascript:createStoryEleven();">
+    <div class="form-group">
+
+        <input type="radio" id="gradeOutput" name="grade" value="n A+">
+        <label for="gradeOutput">A+</label><br>
+        <input type="radio" id="gradeOutput2" name="grade" value="n A-">
+        <label for="gradeOutput2">A-</label><br>  
+        <input type="radio" id="gradeOutput3" name="grade" value=" B+">
+        <label for="gradeOutput3">B+ </label><br>
+        <input type="radio" id="gradeOutput4" name="grade" value=" B-">
+        <label for="gradeOutput4">B- </label><br>
+
+    </div>
+</form>   
+
+<form onClick="javascript:createStoryThirteen();">
+<div class="form-group">
+ 
+<label for="reason1">awesome</label>
+<input type="checkbox" id="reason1">
+<br>
+<label for="reason2">Extroardinary</label>
+<input type="checkbox" id="reason2">
+<br>
+<label for="reason3">Great</label>
+<input type="checkbox" id="reason3"> 
+<br>      
+</div>
+</form>
+
+<form action="javascript:createStoryEight();">
+    <div class="form-group">
+        <label for="subject">type in a number from 2 - 10.</label>
+        <input type="text" class="form-control" id="numberBOutput" placeholder="Enter a number from 2 - 10.">
+    </div>
+</form>
+
+
+
+Mr. and Mrs. <span id="name1Output">_____</span> took their three children, <span id="subjectOutput">_____</span>, <span
+    id="numberOfStudentsOutput">_____</span>, and <span id="girlNameOutput">_____</span> out to their favorite restaraunt 
+    <span id ="restarauntNameOutput">_____</span>, to eat their favorite food, <span id ="restarauntFoodNameOutput">_____</span>.
+     Mama <span id="name1Output2">_____</span> stated, "Children, this food is very good food, but what have you done to deserve this, 
+     you are all flunking your classes. There are people out there working <span id ="numberOutput2">_____</span> times harder than you and 
+     they recieve 1/<span id ="numberOutput">_____</span> of the profit, until you pull up your grades, we aren't coming back here."
+    "But mom, we really like the food here and no one is doing good due to the corona-virus!"<span id ="girlNameOutput2">_____</span> cried out.
+"I don't want to hear anything about the virus, that's all I've heard you say this for the last <span id ="numberBOutput">_____</span>
+ months!" "B-But Mam-" "Nothing more out of your mouth young lady!" The next day, all the children in the 
+ <span id ="name1Output3">_____</span> children met up in the "<span id="radioRoom">_____</span>   "We have to pull our grades up, or we'll never get to taste 
+ <span id ="restarauntFoodNameOutput2">_____</span>
+  again!" <span id ="subjectOutput2">_____</span>  stated. "But how will we do that, we all know we're totally flunking this year?"
+  <span id ="numberOfStudentsOutput2">_____</span>
+ asked.
+ "I have an idea, and it just might work," <span id ="girlNameOutput3">_____</span> answered, "we can take our report cards and fake them when they come home in 
+ the mail! We'll just take the format of our report cards and make our own, with all of our grades being a<span id="grade">_____</span> 
+ and good remarks from each teacher!""This is why you are the smart one big sister."
+ "I know don't worry."
+ So the <span id ="name1Output4">_____</span> children went along with their plan. When the day came they presented the fake report cards to their parents with 
+ true joy in their eyes. They thought to themselves, "We'll finally be able to eat <span id ="restarauntFoodNameOutput3">_____</span> again!" 
+ "Wow this is very good, it's just as I expected from my children, <span id ="forFame"></span><span id ="forGoodness"></span><span id ="forMoney"></span> performance!" Father <span id ="name1Output5">_____</span> remarked 
+ gleefully. "I knew you had it in you, and you know what that means!" All the children smiled, knowing what was coming next, "We can go back to <span id ="restarauntNameOutput2">_____</span>     
+ "YAAAAY!" The children <span id ="activitySelectBox">_____</span>!
+
+</html> 
