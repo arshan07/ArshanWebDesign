@@ -20,6 +20,7 @@
             document.getElementById("name1Output4").innerHTML = name1;
             document.getElementById("name1Output5").innerHTML = name1;
             document.getElementById("name1Output6").innerHTML = name1;
+             document.getElementById("name1Output7").innerHTML = name1;
         }
     </script>
 
@@ -77,8 +78,9 @@ var fameIsChecked = document.getElementById("reason1").checked;
 <script>
     function createStoryFive() {
         var restaraunt = document.getElementById("restaraunt").value;
-        document.getElementById("restarauntNameOutput").innerHTML = restaraunt;
+        doument.getElementById("restarauntNameOutput").innerHTML = restaraunt;
         document.getElementById("restarauntNameOutput2").innerHTML = restaraunt;
+         document.getElementById("restarauntNameOutput3").innerHTML = restaraunt;
     }
 </script>
 
@@ -88,6 +90,7 @@ var fameIsChecked = document.getElementById("reason1").checked;
         document.getElementById("restarauntFoodNameOutput").innerHTML = restarauntFood;
         document.getElementById("restarauntFoodNameOutput2").innerHTML = restarauntFood;
         document.getElementById("restarauntFoodNameOutput3").innerHTML = restarauntFood;
+               document.getElementById("restarauntFoodNameOutput4").innerHTML = restarauntFood;
     }
 </script>
 
@@ -96,6 +99,14 @@ var fameIsChecked = document.getElementById("reason1").checked;
         var number = document.getElementById("number").value;
         document.getElementById("numberOutput").innerHTML = number;
         document.getElementById("numberOutput2").innerHTML = number;
+    }
+</script>
+
+<script>
+    function createStoryFifteen() {
+        var number3 = document.getElementById("number3").value;
+        document.getElementById("numberOutput3").innerHTML = number;
+        document.getElementById("numberOutput32").innerHTML = number;
     }
 </script>
 
@@ -247,6 +258,13 @@ var fameIsChecked = document.getElementById("reason1").checked;
     </div>
 </form>
 
+<form action="javascript:createStoryFifteen();">
+    <div class="form-group">
+        <label for="subject">type in a number from 1 -3</label>
+        <input type="text" class="form-control" id="numberOutput3" placeholder="Enter a number from 1 -3.">
+    </div>
+</form>
+
 
 
 Mr. and Mrs. <span id="name1Output">_____</span> took their three children, <span id="subjectOutput">_____</span>, <span
@@ -271,6 +289,16 @@ Mr. and Mrs. <span id="name1Output">_____</span> took their three children, <spa
  true joy in their eyes. They thought to themselves, "We'll finally be able to eat <span id ="restarauntFoodNameOutput3">_____</span> again!" 
  "Wow this is very good, it's just as I expected from my children, <span id ="forFame"></span><span id ="forGoodness"></span><span id ="forMoney"></span> performance!" Father <span id ="name1Output5">_____</span> remarked 
  gleefully. "I knew you had it in you, and you know what that means!" All the children smiled, knowing what was coming next, "We can go back to <span id ="restarauntNameOutput2">_____</span>     
- "YAAAAY!" The children <span id ="activitySelectBox">_____</span>!
-
+ "YAAAAY!" The children <span id ="activitySelectBox">_____</span>! "But wait, there's more," Mama remarked as the smile slowly faded from her face, "what's this I found, in your {Furniture Name}, (girl name)?"
+Mama slowly lifted the paper revealing the real report cards showing that they all failed. The two boys looked at  and 
+simultaneously said, "I thought you got rid of those!" <span id ="name1Output6">_____</span> slowly backed up, "W-wait we can talk about this, th-those aren't real they're from last y-year!"
+"Not only did you lie to me and your father, but hiding papers in your  {Furniture Name} is also just plain out dumb. No more 
+<span id ="restarauntNameOutput3">_____</span> from <span if = "restarauntFoodNameOutput4">_____</span> for <span id="numberOutput3">_____</span> years!"
+"Mom you can't be serious!"
+"You heard me!"
+<br>
+<br>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+This is the story of three naughty children who thought they could outwit their parents, and fake their gradesto get to their favorite food. The lesson is, lying never gets you anywhere, be truthful!
+</textarea>
 </html> 
